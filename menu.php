@@ -20,6 +20,7 @@
 				      <li><a href="#" onclick="urlCuentas()">Cuentas</a></li>
 				      <li><a href="#" onclick="urlPlacas()">Placas</a></li>
 				      <li><a href="#" onclick="urlParqueos()">Parqueos</a></li>
+				      <li><a href="#" onclick="urlEdificios()">Edificios</a></li>
 				    </ul>
 			    	<button class="btn btn-danger navbar-btn">Log out</button>
 				</div>
@@ -27,7 +28,7 @@
 		</nav>
 		<div class="container-fluid">
 			<div class="row">
-				<iframe src="" id="contenido" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;width:100%"></iframe>
+				<iframe src="cuentas.php" id="contenido" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;width:100%"></iframe>
 			</div>
 		</div>
 		

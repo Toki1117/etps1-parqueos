@@ -1,40 +1,31 @@
-
 <html>
 	<head>
 		<!--<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
-        <title>Agregar cuenta nueva</title>
+        <title>Agregar parqueo</title>
 	</head>
 	<body>
 		
 		<div class="container">
-		  <h4 class="text-center" style="padding:12px;">Agregar cuenta</h4>
+		  <h4 class="text-center" style="padding:12px;">Agregar parqueo</h4>
 		  <form class="form-horizontal" action="/action_page.php">
 		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="email">Correo:</label>
+		      <label class="control-label col-sm-3" for="placa">Nombre del parqueo:</label>
 		      <div class="col-sm-9">
-		        <input type="email" class="form-control" id="email" placeholder="ejemplo@mail.com"  name="email">
+		        <input type="text" class="form-control" id="nom_parqueo"  name="parqueo">
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label class="control-label col-sm-3">Tipo:</label>
+		      <label class="control-label col-sm-3" for="horario">Edificio:</label> 
 		      <div class="col-sm-9">
-		         	<label class="radio-inline"><input type="radio" name="optradio" checked>Docente</label>
-					<label class="radio-inline"><input type="radio" name="optradio">Vigilante</label>
-					<label class="radio-inline"><input type="radio" name="optradio">Administrador</label> 
+		        <input type="text" class="form-control" id="edificio"  name="edificio">
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="pwd">Clave:</label>
-		      <div class="col-sm-9">          
-		        <input type="password" class="form-control" id="pwd"  name="pwd">
-		      </div>
-		    </div>
-		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="pwdConfirm">Confirmar clave:</label>
-		      <div class="col-sm-9">          
-		        <input type="password" class="form-control" id="pwdConfirm"  name="pwdConfirm">
+		      <label class="control-label col-sm-3" for="num_espacios">Espacios:</label>
+		      <div class="col-sm-9">
+		         	<input class="form-control" type="number" min="1" max="30" id="num_espacios" name="espacios">
 		      </div>
 		    </div>
 		    <div class="form-group"> 
@@ -55,4 +46,4 @@
 	</body>
 </html>	
 		
-		
+	
