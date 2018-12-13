@@ -96,7 +96,7 @@
 		<!--<div class="checkbox">
 		  <label><input type="checkbox"> Remember me</label>
 		</div>-->
-	  <button type="submit" class="btn btn-default" value="ACEPTAR">Submit</button>
+	  <button type="submit" class="btn btn-primary btn-block " value="ACEPTAR">Submit</button>
 			<div align="center" style="color:black;" class="alert aler-danger"> <h3> <?php echo $error; ?> </h3> </div>
 			
 	</form>
