@@ -25,7 +25,7 @@
 		{
 		$buscar = $_POST['nombreEdificio'];
 			echo $buscar;
-		$url = "http://localhost/etps1/ProyectoParqueo/welcome/get_edificio_por_nombre";
+		$url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/get_edificio_por_nombre";
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_POST, 1);
