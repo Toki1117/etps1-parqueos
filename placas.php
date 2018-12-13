@@ -49,7 +49,7 @@
 				<div class="col-sm-9 col-md-9 col-lg-9 " >
 					<h3 class="text-center" style="border-bottom:solid 1px #f0f0f0; padding-bottom:15px; color:#404040">Administración de placas</h3>
 					<div class="row">
-						<iframe src="" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
+						<iframe src="listado_placas.php" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
 					</div>
 				</div>
 			</div>

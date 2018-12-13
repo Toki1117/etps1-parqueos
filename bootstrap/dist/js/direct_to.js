@@ -9,6 +9,9 @@
 			function urlPlacas(){
 				document.getElementById("contenido").src ="placas.php"; 
 			}
+			function urlEdificios(){
+				document.getElementById("contenido").src ="edificios.php"; 
+			}
 
 // SUBIR ARCHIVO
 			function urlSubirArchivo(){
@@ -39,6 +42,9 @@
 			function urlEditarParqueos(){
 				document.getElementById("paginas").src ="editar_parqueos.php"; 
 			}
+			function urlListaRegistros(){
+				document.getElementById("paginas").src ="listado_registros.php"; 
+			}
 			
 
 //IFRAME PLACAS
@@ -51,5 +57,18 @@
 			}
 			function urlEditarPlacas(){
 				document.getElementById("paginas").src ="editar_placas.php"; 
+			}
+			
+
+// IFRAME EDIFICIOS
+			function urlListaEdificios(){
+				document.getElementById("paginas").src ="listado_edificios.php"; 
+			}
+
+			function urlAgregarEdificios(){
+				document.getElementById("paginas").src ="agregar_edificios.php"; 
+			}
+			function urlEditarEdificios(){
+				document.getElementById("paginas").src ="editar_edificios.php"; 
 			}
 			

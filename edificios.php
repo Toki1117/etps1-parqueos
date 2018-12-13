@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
         <!--<style> <?php //include "bootstrap/dist/css/bootstrap.min.css" ?> </style>-->
-        <title>Cuentas de usuarios</title>
+        <title>Edificios existentes</title>
         
 	</head>
 	<body >
@@ -33,10 +33,10 @@
 						</div>
 						<div class="col-sm-12 col-md-12 col-lg-12">
 							<ul class="nav nav-pills nav-stacked text-center" style="" data-spy="affix" data-offset-top="205">
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaCuentas" 
-						        	onclick="urlListaCuentas();return false;" >Listado actual</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarCuentas" onclick="urlAgregarCuentas()" >Agregar nuevo</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarCuentas" onclick="urlEditarCuentas()">Editar</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaEdificios" 
+						        	onclick="urlListaEdificios();return false;" >Listado actual</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarEdificios" onclick="urlAgregarEdificios()" >Agregar nuevo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarEdificios" onclick="urlEditarEdificios()">Editar</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
 						    </ul>
 						</div>
@@ -47,9 +47,9 @@
 					</div>
 				</nav>
 				<div class="col-sm-9 col-md-9 col-lg-9 " >
-					<h3 class="text-center" style="border-bottom:solid 1px #f0f0f0; padding-bottom:15px; color:#404040">Administración de cuentas</h3>
+					<h3 class="text-center" style="border-bottom:solid 1px #f0f0f0; padding-bottom:15px; color:#404040">Administración de edificios</h3>
 					<div class="row">
-						<iframe src="listado_cuentas.php" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
+						<iframe src="listado_edificios.php" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
 					</div>
 				</div>
 			</div>
