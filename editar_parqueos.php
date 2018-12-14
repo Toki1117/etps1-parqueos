@@ -11,41 +11,35 @@
 		  <h4 class="text-center" style="padding:12px;">Editar informacion de parqueo</h4>
 
 		   <div class="row" style="padding:12px; border-bottom:2px #f0f0f0 solid;margin-bottom:20px">
-				<form id="form_busqueda_parqueo" class="form-horizontal" action="" method="POST">
-					 <div class="form-group">
-					  	<div class="col-lg-3 col-md-3 col-sm-3">
-					  		<!-- <input class="checkbox" type="checkbox" id="edicion" name="edicion" value="editar">
-			    			<label class="control-label" for="edicion">Editar</label>-->
-					  	</div>
-					  	<div class="col-lg-7 col-md-7 col-sm-7" >
-					  		<select  class="form-control" id="id_parqueo"  name="idParqueo">
-					        	<?php ListaUsuarios(); ?> 
-					        </select>
-					  		<!--<input class="form-control" type="text" name="buscarParqueo">-->
-					  	</div>
-						<div class="col-lg-2 col-md-2 col-sm-2" ><input class="btn btn-default" type="submit" value="Buscar" ></div>
-						
-					</div>
-				</form>
+				
 		</div>
 		  
-		  <form id="form_editar_parueo" class="form-horizontal" action="/action_page.php">
+		  <form id="form_editar_parueo" class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_actualizar_parqueo" method="post">
+				<select  class="form-control" id="id_parqueo"  name="idParqueo">
+					<?php ListaParqueos(); ?> 
+    		</select>
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="nom_parqueo">Nombre del parqueo:</label>
 		      <div class="col-sm-9">
-		        <input type="text" class="form-control" id="nom_parqueo"  name="parqueo">
+		        <input type="text" class="form-control" id="nom_parqueo"  name="nombreParqueo">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="horario">Edificio:</label> 
 		      <div class="col-sm-9">
-		        <input type="text" class="form-control" id="edificio"  name="edificio">
+					<select class="form-control" id="id_edificio"  name="idEdificio">
+								<?php editarEdificios(); ?> 
+   						</select>
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="num_espacios">Espacios:</label>
+		      <label class="control-label col-sm-3" for="num_espacios">Cantidad:</label>
 		      <div class="col-sm-9">
-		         	<input class="form-control" value="1" type="number" min="1" max="30" id="num_espacios" name="espacios">
+		         	<input class="form-control" value="1" type="number" min="1" max="30" id="num_espacios" name="cantidad">
+		      </div>
+					<label class="control-label col-sm-3" for="num_espacios">Reservado:</label>
+		      <div class="col-sm-9">
+		         	<input class="form-control" value="1" type="number" min="1" max="30" id="num_espacios" name="reservados">
 		      </div>
 		    </div>
 		    <div class="form-group"> 
@@ -66,19 +60,33 @@
 	</body>
 </html>	
 		
-	<?php 
-	function ListaUsuarios(){
-		  $url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_listar_usuario";
+<?php 
+	function ListaParqueos(){
+		  $url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/getparqueoslist";
 		  $ch = curl_init($url);
 		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		  $response = curl_exec($ch);
 		  $array = json_decode($response, true);
 		  $cont = count ($array);
-		  echo $array;
 		  for ($i = 0; $i< $cont; $i++)
 		  {
 		   //echo"<tr class =''>";
-		    echo"<option value=".$array[$i]['id_parqueo'].">".$array[$i]['nombre_parqueo']."</option>";
+		   echo"<option value=".$array[$i]['id_parqueo'].">".$array[$i]['nombre_parqueo']."</option>";
+		   //echo"</tr>";
+
+		  }
+	}
+	function editarEdificios(){
+		  $url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_listar_edificio";
+		  $ch = curl_init($url);
+		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		  $response = curl_exec($ch);
+		  $array = json_decode($response, true);
+		  $cont = count ($array);
+		  for ($i = 0; $i< $cont; $i++)
+		  {
+		   //echo"<tr class =''>";
+		   echo"<option value=".$array[$i]['id_edificio'].">".$array[$i]['nombre_edificio']."</option>";
 		   //echo"</tr>";
 
 		  }

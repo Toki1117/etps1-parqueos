@@ -8,17 +8,17 @@
 	<body>
 		<div class="container">
 		  <h4 class="text-center" style="padding:12px;">Agregar nuevo edificio</h4>
-		  <form class="form-horizontal" action="/action_page.php">
+		  <form class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_agregar_edificio" method="post">
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="nom_edificio">Nombre del edificio:</label>
 		      <div class="col-sm-9">
-		        <input type="text" class="form-control" id="nom_edificio"  name="edificio">
+		        <input type="text" class="form-control" id="nom_edificio"  name="txtNombreEdificio">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="nom_corto">Nombre corto:</label> 
 		      <div class="col-sm-9">
-		        <input type="text" class="form-control" id="nom_corto"  name="nombreCorto">
+		        <input type="text" class="form-control" id="nom_corto"  name="txtNombreCortoEdificio">
 		      </div>
 		    </div>
 		    <div class="form-group"> 

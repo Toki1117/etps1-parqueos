@@ -9,7 +9,7 @@
 		
 		<div class="container">
 		  <h4 class="text-center" style="padding:12px;">Agregar placa</h4>
-		  <form class="form-horizontal" action="http://localhost/etps1/ProyectoParqueo/welcome/agregarplaca">
+		  <form class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/agregarplaca" method="post">
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="placa">Placa:</label>
 		      <div class="col-sm-9">
@@ -42,8 +42,14 @@
 		        <input type="text" class="form-control" id="ciclo"  name="ciclo">
 		      </div>
 		    </div>
+				<div class="form-group">
+		      <label class="control-label col-sm-3" for="ciclo">Tipo:</label>
+		      <div class="col-sm-9">          
+		        <input type="text" class="form-control" id="tipo"  name="tipo">
+		      </div>
+		    </div>
 		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="id_parqueo">ID parqueo:</label>
+		      <label class="control-label col-sm-3" for="id_parqueo">parqueo:</label>
 		      <div class="col-sm-9">          
 		        <select  class="form-control" id="id_parqueo"  name="idParqueo">
 		        	<?php ListaParqueos(); ?> 
@@ -63,8 +69,8 @@
 		</div>
 		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="bootstrap/dist/js/direct_to.js" ><?php //include "bootstrap/dist/js/direct_to.js" ?></script>
-    	<script src="bootstrap/dist/js/bootstrap.min.js" ><?php //include "bootstrap/dist/js/bootstrap.min.js" ?></script>
+		<script src="bootstrap/dist/js/direct_to.js" ></script>
+    	<script src="bootstrap/dist/js/bootstrap.min.js" ></script>
 	</body>
 </html>	
 
