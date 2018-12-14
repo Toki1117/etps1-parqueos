@@ -33,10 +33,11 @@
 						</div>
 						<div class="col-sm-12 col-md-12 col-lg-12">
 							<ul class="nav nav-pills nav-stacked text-center" style="" data-spy="affix" data-offset-top="205">
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaCuentas" 
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Listaparqueo" 
 						        	onclick="urlListaParqueos();return false;" >Listado actual</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarCuentas" onclick="urlAgregarParqueos()" >Agregar nuevo</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarCuentas" onclick="urlEditarParqueos()">Editar</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Agregarparqueo" onclick="urlAgregarParqueos()" >Agregar nuevo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Editarparqueo" onclick="urlEditarParqueos()">Edita parqueo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Eliminarparqueo" onclick="urlEliminarParqueos()">Eliminar parqueo</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaRegistros" onclick="urlListaRegistros()">Lista de registros</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
 						    </ul>
@@ -50,7 +51,7 @@
 				<div class="col-sm-9 col-md-9 col-lg-9 " >
 					<h3 class="text-center" style="border-bottom:solid 1px #f0f0f0; padding-bottom:15px; color:#404040">Administración de parqueos</h3>
 					<div class="row">
-						<iframe src="listado_registros.php" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
+						<iframe src="listado_reservaciones.php" id="paginas" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;"></iframe>
 					</div>
 				</div>
 			</div>

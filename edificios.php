@@ -37,6 +37,7 @@
 						        	onclick="urlListaEdificios();return false;" >Listado actual</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarEdificios" onclick="urlAgregarEdificios()" >Agregar nuevo</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarEdificios" onclick="urlEditarEdificios()">Editar</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EliminarEdificios" onclick="urlEliminarEdificios()">Eliminar edificio</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
 						    </ul>
 						</div>
