@@ -35,9 +35,10 @@
 							<ul class="nav nav-pills nav-stacked text-center" style="" data-spy="affix" data-offset-top="205">
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaCuentas" 
 						        	onclick="urlListaPlacas();return false;" >Listado actual</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarCuentas" onclick="urlAgregarPlacas()" >Agregar nuevo</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarCuentas" onclick="urlEditarPlacas()">Editar</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarPlacas" onclick="urlAgregarPlacas()" >Agregar nuevo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarPlacas" onclick="urlEditarPlacas()">Editar placa</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EliminarPlacas" onclick="urlEliminarPlacas()">Eliminar placa</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirPlacas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
 						    </ul>
 						</div>
 						<div class="col-sm-3 col-md-3 col-lg-3" style="height:10%;width: 100%;">

@@ -36,7 +36,8 @@
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaCuentas" 
 						        	onclick="urlListaCuentas();return false;" >Listado actual</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="AgregarCuentas" onclick="urlAgregarCuentas()" >Agregar nuevo</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarCuentas" onclick="urlEditarCuentas()">Editar</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EditarCuentas" onclick="urlEditarCuentas()">Editar cuenta</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EliminarCuentas" onclick="urlEliminarCuentas()">Eliminar cuenta</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
 						    </ul>
 						</div>
