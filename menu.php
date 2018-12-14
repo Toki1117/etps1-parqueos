@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 	<head>
 		<!--<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>-->
@@ -17,18 +18,18 @@
 			    </div>
 			    <div class="navbar-right">
 				    <ul class="nav navbar-nav">
-				      <li><a href="#" onclick="urlCuentas()">Cuentas</a></li>
+				      <!--<li><a href="#" onclick="urlCuentas()">Cuentas</a></li>-->
 				      <li><a href="#" onclick="urlPlacas()">Placas</a></li>
 				      <li><a href="#" onclick="urlParqueos()">Parqueos</a></li>
 				      <li><a href="#" onclick="urlEdificios()">Edificios</a></li>
 				    </ul>
-			    	<button class="btn btn-danger navbar-btn">Log out</button>
+			    	<button class="btn btn-danger navbar-btn" href="logout.php">Log out</button>
 				</div>
   			</div>
 		</nav>
 		<div class="container-fluid">
 			<div class="row">
-				<iframe src="cuentas.php" id="contenido" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;width:100%"></iframe>
+				<iframe src="placas.php" id="contenido" class="col-sm-12 col-md-12 col-lg-12" style="border:none;height:80%;width:100%"></iframe>
 			</div>
 		</div>
 		
@@ -37,3 +38,4 @@
     	<script src="bootstrap/dist/js/bootstrap.min.js" ><?php //include "bootstrap/dist/js/bootstrap.min.js" ?></script>
 	</body>
 </html>	
+

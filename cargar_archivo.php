@@ -3,7 +3,8 @@
 		<title>Cargar archivo</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
 	</head>
-	<body>
+	<body class="container" style="padding:20px">
+		<div class="row well">
 <?php
 
 //Carga de la librearía de excel y el modelo para guardar los datos
@@ -13,7 +14,9 @@ include "..\ProyectoParqueo\application\models\\registroExcel.php";
 //Para setear las letras como numeros
 $chars = array(1 => 'A', 2 => 'B' , 3 => 'C', 4 => 'D', 5 => 'E', 6 => 'F', 7 => 'G', 8 => 'H', 9 => 'I', 10 => 'J', 11 => 'K', 12 => 'L', 13 => 'M', 14 => 'N', 15 => 'O', 16 => 'P', 17 => 'Q', 18 => 'R', 19 => 'S', 20 => 'T', 21 => 'U', 22 => 'V', 23 => 'W', 24 => 'X', 25 => 'Y', 26 => 'Z');
 
-echo "<h2 class='text-center'>Seleccionar un archivo de Excel</h2> <br><img src='images/carga_excel.png' width='130'>";
+echo "<h2 class='text-center'>Seleccionar un archivo de Excel</h2> <br>
+<div class='colcol-lg-4 col-md-6 col-sm-4'><img src='images/carga_excel.png' width='130'>
+</div>";
 
 //Para verificar la extensión del archivo
 if(!empty($_FILES)){
@@ -26,8 +29,8 @@ if (empty($_FILES))
 {
 	echo "
 		<form method='post' enctype='multipart/form-data' action='' >	
-		<input type='file' class='btn btn-succes' class='form-control' name='excel' value='Subir' requrided='true'>
-		<br>
+		<input type='file' class='form-group' class='form-control' name='excel' value='Subir' requrided='true'>
+		
 		<input class='btn btn-warning' type='submit'  value='Mostrar'>
 		";
 }
@@ -36,9 +39,9 @@ elseif ($_FILES['excel']['size'] == 0) {
 	echo "
 		Por favor seleccionar un archivo.
 		<form method='post' enctype='multipart/form-data' action=''>	
-		<input type='file' class='btn btn-succes' name='excel' value='Subir' requrided='true'>
+		<input type='file' class='form-group' name='excel' value='Subir' requrided='true'>
 		<br>
-		<input class='btn btn-warning' type='submit'  value='Mostrar'>
+		<input class='btn btn-warning ' type='submit'  value='Mostrar'>
 		";
 }
 elseif ($ext !== 'xlsx') {
@@ -46,9 +49,9 @@ elseif ($ext !== 'xlsx') {
 	echo "
 		Por favor seleccionar un archivo de Excel.
 		<form method='post' enctype='multipart/form-data' action=''>	
-		<input class='btn btn-succes' type='file' name='excel' value='Subir' requrided='true'>
+		<input class='form-group' type='file' name='excel' value='Subir' requrided='true'>
 		<br>
-		<input type='submit' class='btn btn-warning' value='Mostrar'>
+		<input type='submit' class='btn btn-warning ' value='Mostrar'>
 		";
 }
 else
@@ -160,7 +163,7 @@ else
 }
 
 ?>
-
+	</div>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap/dist/js/direct_to.js" ><?php //include "bootstrap/dist/js/direct_to.js" ?></script>
     	<script src="bootstrap/dist/js/bootstrap.min.js" ><?php //include "bootstrap/dist/js/bootstrap.min.js" ?></script>
