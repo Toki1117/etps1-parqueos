@@ -63,13 +63,12 @@
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		$response = curl_exec($ch);
 		$array = json_decode($response,true); //True convierte el json en array asociativo
-		print_r($array);
 
 		if($array['nivel_usuario'] > 0){
 			header('Location: cuentas.php');
 			// echo "Ingresado";
 		} else {
-			// echo "Credenciales incorrectas";
+			echo "Credenciales incorrectas";
 		}
 	}
 
