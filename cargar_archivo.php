@@ -7,8 +7,8 @@
 <?php
 
 //Carga de la librearía de excel y el modelo para guardar los datos
-include ".\phpexcel\Classes\PHPExcel.php";
-include ".\application\models\\registroExcel.php";
+include "..\ProyectoParqueo\phpexcel\Classes\PHPExcel.php";
+include "..\ProyectoParqueo\application\models\\registroExcel.php";
 
 //Para setear las letras como numeros
 $chars = array(1 => 'A', 2 => 'B' , 3 => 'C', 4 => 'D', 5 => 'E', 6 => 'F', 7 => 'G', 8 => 'H', 9 => 'I', 10 => 'J', 11 => 'K', 12 => 'L', 13 => 'M', 14 => 'N', 15 => 'O', 16 => 'P', 17 => 'Q', 18 => 'R', 19 => 'S', 20 => 'T', 21 => 'U', 22 => 'V', 23 => 'W', 24 => 'X', 25 => 'Y', 26 => 'Z');
@@ -132,7 +132,8 @@ else
 		$idParqueo = $registro->idParqueo['valor'];
 		$ciclo = $registro->ciclo['valor'];
 
-		$url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/agregarplaca";
+		//$url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/agregarplaca";
+		$url="http://localhost:8080/etps1/ProyectoParqueo/welcome/cargar_archivo";
 
 		//Se inicia Curl en el servidor especificado
 		$ch = curl_init($url);

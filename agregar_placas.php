@@ -70,12 +70,13 @@
 
 <?php 
 	function ListaParqueos(){
-		  $url = "http://localhost/etps1/ProyectoParqueo/welcome/getparqueoslist";
+		  $url = "http://localhost:8080/etps1/ProyectoParqueo/welcome/getparqueoslist";
 		  $ch = curl_init($url);
 		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		  $response = curl_exec($ch);
 		  $array = json_decode($response, true);
 		  $cont = count ($array);
+		  echo $array;
 		  for ($i = 0; $i< $cont; $i++)
 		  {
 		   //echo"<tr class =''>";

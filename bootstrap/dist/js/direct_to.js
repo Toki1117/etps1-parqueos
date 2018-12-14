@@ -19,7 +19,7 @@
 			}
 // IFRAME CUENTAS
 			function urlListaCuentas(){
-				document.getElementById("paginas").src ="listado_cuentas.php"; 
+				document.getElementById("paginas").src ="listado_usuarios.php"; 
 			}
 
 			function urlAgregarCuentas(){
@@ -27,6 +27,9 @@
 			}
 			function urlEditarCuentas(){
 				document.getElementById("paginas").src ="editar_cuentas.php"; 
+			}
+			function urlEliminarCuentas(){
+				document.getElementById("paginas").src ="eliminar_cuentas.php"; 
 			}
 			
 
@@ -43,7 +46,10 @@
 				document.getElementById("paginas").src ="editar_parqueos.php"; 
 			}
 			function urlListaRegistros(){
-				document.getElementById("paginas").src ="listado_registros.php"; 
+				document.getElementById("paginas").src ="listado_reservaciones.php"; 
+			}
+			function urlEliminarParqueos(){
+				document.getElementById("paginas").src ="eliminar_parqueos.php"; 
 			}
 			
 
@@ -58,6 +64,9 @@
 			function urlEditarPlacas(){
 				document.getElementById("paginas").src ="editar_placas.php"; 
 			}
+			function urlEliminarPlacas(){
+				document.getElementById("paginas").src ="eliminar_placas.php"; 
+			}
 			
 
 // IFRAME EDIFICIOS
@@ -70,5 +79,8 @@
 			}
 			function urlEditarEdificios(){
 				document.getElementById("paginas").src ="editar_edificios.php"; 
+			}
+			function urlEliminarEdificios(){
+				document.getElementById("paginas").src ="eliminar_edificios.php"; 
 			}
 			
