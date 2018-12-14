@@ -18,10 +18,9 @@
 
 <table   id="table table-striped table-responsive" class="table">
 		<tr  class ="warning text-uppercase" id="titulo">
-			<td>Nombre docente</td>
-			<td>Horario</td>
-            <td>Ciclo parqueo</td>
-            <td>Tipo docente</td>
+			<td>Reservación</td>
+			<td>Motivo</td>
+            <td>Número de reservaciones</td>
 		</tr>
 
 

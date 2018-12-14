@@ -65,10 +65,20 @@
 		$array = json_decode($response,true); //True convierte el json en array asociativo
 
 		if($array['nivel_usuario'] > 0){
-			header('Location: cuentas.php');
+
+			header('Location: session.php');
 			// echo "Ingresado";
 		} else {
-			echo "Credenciales incorrectas";
+			echo "<div class='row'>
+					<div class='col-lg-4 col-md-3 col-sm-4'></div>
+					<div class='col-lg-4 col-md-6 col-sm-4'>
+						<div id='mensaje' class='text-center alert alert-danger alert-dismissible'>
+							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+							<strong>Credenciales incorrectas</strong>
+						</div>
+					</div>
+					<div class='col-lg-4 col-md-3 col-sm-4'></div>
+				</div>";
 		}
 	}
 

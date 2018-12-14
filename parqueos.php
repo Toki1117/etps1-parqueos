@@ -38,8 +38,9 @@
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Agregarparqueo" onclick="urlAgregarParqueos()" >Agregar nuevo</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Editarparqueo" onclick="urlEditarParqueos()">Edita parqueo</a></li>
 						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="Eliminarparqueo" onclick="urlEliminarParqueos()">Eliminar parqueo</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaRegistros" onclick="urlListaRegistros()">Lista de registros</a></li>
-						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="ListaRegistros" onclick="urlListaRegistros()">Lista de reservaciones</a></li>
+						        <li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="EliminarRegistros" onclick="urlEliminarRegistros()">Eliminar reservaciones</a></li>
+						        <!--<li style="border-bottom:#f0f0f0 1px solid;margin-bottom:15px;"><a href="#" id="SubirCuentas" onclick="urlSubirArchivo()" >Subir archivo</a></li>-->
 						    </ul>
 						</div>
 						<div class="col-sm-3 col-md-3 col-lg-3" style="height:10%;width: 100%;">

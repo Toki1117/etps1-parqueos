@@ -1,7 +1,7 @@
 // URL DEL MENU
-			function urlCuentas(){
+			/*function urlCuentas(){
 				document.getElementById("contenido").src ="cuentas.php"; 
-			}
+			}*/
 
 			function urlParqueos(){
 				document.getElementById("contenido").src ="parqueos.php"; 
@@ -47,6 +47,9 @@
 			}
 			function urlListaRegistros(){
 				document.getElementById("paginas").src ="listado_reservaciones.php"; 
+			}
+			function urlEliminarRegistros(){
+				document.getElementById("paginas").src ="eliminar_reservaciones.php"; 
 			}
 			function urlEliminarParqueos(){
 				document.getElementById("paginas").src ="eliminar_parqueos.php"; 
