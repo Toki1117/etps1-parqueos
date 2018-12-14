@@ -45,7 +45,7 @@
 </html>
 
 <?php
-
+	session_start();
 	if(isset($_POST['txtcorreo']) && isset($_POST['txtpass'])){
 		$correo = $_POST['txtcorreo'];
 		$pass = $_POST['txtpass'];
@@ -64,9 +64,9 @@
 		$response = curl_exec($ch);
 		$array = json_decode($response,true); //True convierte el json en array asociativo
 
-		if($array['nivel_usuario'] > 0){
-
-			header('Location: session.php');
+		if($array['nivel_usuario'] == 1){
+			$_SESSION['user']="Autenticado";
+			header('Location: menu.php');
 			// echo "Ingresado";
 		} else {
 			echo "<div class='row'>

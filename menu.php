@@ -23,7 +23,7 @@
 				      <li><a href="#" onclick="urlParqueos()">Parqueos</a></li>
 				      <li><a href="#" onclick="urlEdificios()">Edificios</a></li>
 				    </ul>
-			    	<button class="btn btn-danger navbar-btn" href="logout.php">Log out</button>
+			    	<button class="btn btn-danger navbar-btn" onclick="window.location.href='logout.php';">Log out</button>
 				</div>
   			</div>
 		</nav>
