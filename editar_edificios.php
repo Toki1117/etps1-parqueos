@@ -16,9 +16,7 @@
 		  </div>
 
 		   <form id="form_editar_edificio" class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_actualizar_edificio" method="post">
-		  		<select class="form-control" id="id_edificio"  name="idEdificio">
-								<?php editarEdificios(); ?> 
-   						</select></div>
+		  		
 		  	<!--<div class="form-group" 
 		  	style="border-bottom:2px #f0f0f0 solid;padding-bottom:15px;border-top:2px #f0f0f0 solid;padding-top:15;px ">
 		  		<label class="control-label col-lg-3 col-md-3 col-sm-3" for="">Escoger accion:</label>
@@ -31,8 +29,15 @@
 				<div class="col-lg-4 col-md-4 col-sm-4"></div>
 		  	</div>-->
 
+			 <div class="form-group">
+		      <label class="control-label col-sm-3" for="id_edificio">Nombre del edificio:</label>
+		      <div class="col-sm-9">
+		        <select class="form-control" id="id_edificio"  name="idEdificio">
+								<?php editarEdificios(); ?> 
+   						</select></div>
+		    </div>
 		    <div class="form-group">
-		      <label class="control-label col-sm-3" for="nom_edificio">Nombre del edificio:</label>
+		      <label class="control-label col-sm-3" for="nom_edificio">Nuevo nombre:</label>
 		      <div class="col-sm-9">
 		        <input type="text" class="form-control" id="nom_edificio"  name="txtNombreEdificio">
 		      </div>

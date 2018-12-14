@@ -15,9 +15,15 @@
 		</div>
 		  
 		  <form id="form_editar_parueo" class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_actualizar_parqueo" method="post">
-				<select  class="form-control" id="id_parqueo"  name="idParqueo">
+				
+    		<div class="form-group">
+		      <label class="control-label col-sm-3" for="id_parqueo">Parqueo:</label>
+		      <div class="col-sm-9">
+		        <select  class="form-control" id="id_parqueo"  name="idParqueo">
 					<?php ListaParqueos(); ?> 
-    		</select>
+    			</select>
+		      </div>
+		    </div>
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="nom_parqueo">Nombre del parqueo:</label>
 		      <div class="col-sm-9">

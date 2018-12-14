@@ -86,4 +86,7 @@
 			function urlEliminarEdificios(){
 				document.getElementById("paginas").src ="eliminar_edificios.php"; 
 			}
-			
+// VOLVER ATRAS
+			function backAgain(){
+				window.history.back();
+			};

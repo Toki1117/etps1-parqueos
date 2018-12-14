@@ -14,9 +14,7 @@
 		</div>
 
 		  <form id="form_edicion" class="form-horizontal" action="http://localhost:8080/etps1/ProyectoParqueo/welcome/crud_actualizar_placa" method="post">
-				<select  class="form-control" id="id_placa"  name="placa">
-					<?php ListaPlacas(); ?> 
-    		</select>
+				
 		  	<!--<div class="form-group" 
 		  	style="border-bottom:2px #f0f0f0 solid;padding-bottom:15px;border-top:2px #f0f0f0 solid;padding-top:10px ">
 		  		<label class="control-label col-lg-3 col-md-3 col-sm-3" for="">Escoger accion:</label>
@@ -28,7 +26,14 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4"></div>
 		  	</div>-->
-
+			<div class="form-group">
+		      <label class="control-label col-sm-3" for="id_placa">Número de placa:</label> 
+		      <div class="col-sm-9">
+		        <select  class="form-control" id="id_placa"  name="placa">
+					<?php ListaPlacas(); ?> 
+    			</select>
+		      </div>
+		    </div>
 		    
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="horario">Horario:</label> 

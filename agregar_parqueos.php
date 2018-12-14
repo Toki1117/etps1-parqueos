@@ -20,7 +20,7 @@
 		    <div class="form-group">
 		      <label class="control-label col-sm-3" for="horario">Edificio:</label> 
 		      <div class="col-sm-9">
-					<select class="form-control" id="id_edificio"  name="idEdificio">
+						<select class="form-control" id="id_edificio"  name="idEdificio">
 								<?php editarEdificios(); ?> 
    						</select></div>
 		      </div>
